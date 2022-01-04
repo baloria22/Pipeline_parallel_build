@@ -1,0 +1,14 @@
+pipeline{
+  agent any
+    stage {
+      stage ('Build'){
+        step {
+          sh 'echo "Hello" ' 
+          sh '''
+          echo "Hello script"
+          ls -lah
+          '''
+         }
+        }
+       }
+      }
